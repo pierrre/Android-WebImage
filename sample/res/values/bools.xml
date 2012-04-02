@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <bool name="activity_country_details_allow_display">true</bool>
+
+</resources>

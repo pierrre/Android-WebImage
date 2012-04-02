@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:icon="@android:drawable/ic_menu_preferences"
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/settings">
+        <menu>
+            <item
+                android:id="@+id/memory_cache"
+                android:checkable="true"
+                android:title="@string/memory_cache"/>
+            <item
+                android:id="@+id/file_cache"
+                android:checkable="true"
+                android:title="@string/file_cache"/>
+            <item
+                android:id="@+id/clear_cache"
+                android:title="@string/clear_cache"/>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/about"
+        android:icon="@android:drawable/ic_menu_info_details"
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/about"/>
+    <item
+        android:id="@+id/share"
+        android:actionProviderClass="com.actionbarsherlock.widget.ShareActionProvider"
+        android:icon="@android:drawable/ic_menu_share"
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/share"/>
+
+</menu>
