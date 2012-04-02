@@ -1,4 +1,4 @@
-﻿#PierrreEncrypterBundle
+﻿# Foobar
 
 This library allows developers to easily integrate images from the web in an Android application.
 
