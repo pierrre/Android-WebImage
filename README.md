@@ -53,3 +53,10 @@ Set the image url:
 WebImageView image = (WebImageView) findViewById(R.id.image);
 image.setImageUrl("http://www.example.com/image.png");
 ```
+
+## Contact
+
+- Email: pierredurand@gmail.com
+- Twitter: [@pierredurand87](https://twitter.com/pierredurand87)
+- Google+: [Pierre Duraand](https://plus.google.com/115978530878583279430)
+- GitHub: [pierrre](https://github.com/pierrre)
