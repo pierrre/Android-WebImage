@@ -13,6 +13,11 @@ This library allows developers to easily integrate images from the web in an And
 
 A sample application is available: [WebImage Sample](https://play.google.com/store/apps/details?id=org.pierrre.webimage.sample).
 
+![Phone landscape](https://github.com/pierrre/Android-WebImage/raw/master/sample/project/phone-landscape.png)
+![Phone portrait list](https://github.com/pierrre/Android-WebImage/raw/master/sample/project/phone-portrait-list.png)
+![Phone portrait flag](https://github.com/pierrre/Android-WebImage/raw/master/sample/project/phone-portrait-flag.png)
+![Tablet](https://github.com/pierrre/Android-WebImage/raw/master/sample/project/tablet.png)
+
 The source code is available in this repository.
 
 ## Compatibility
