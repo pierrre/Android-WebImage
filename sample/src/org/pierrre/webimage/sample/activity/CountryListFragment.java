@@ -9,13 +9,12 @@ import org.pierrre.webimage.sample.item.CountryItem;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AbsListView;
 import android.widget.BaseAdapter;
 import android.widget.ListView;
 
 import com.actionbarsherlock.app.SherlockListFragment;
 
-public class CountryListFragment extends SherlockListFragment implements AbsListView.RecyclerListener {
+public class CountryListFragment extends SherlockListFragment {
 	private List<Country> countries;
 	
 	private CountryListAdapter adapter;
@@ -34,7 +33,7 @@ public class CountryListFragment extends SherlockListFragment implements AbsList
 	public void onViewCreated(View view, Bundle savedInstanceState) {
 		super.onViewCreated(view, savedInstanceState);
 		
-		this.getListView().setRecyclerListener(this);
+		AdapterItem.setRecyclerLister(this.getListView());
 	}
 	
 	@Override
@@ -44,15 +43,6 @@ public class CountryListFragment extends SherlockListFragment implements AbsList
 		Country country = this.countries.get(position);
 		
 		((CountryActivity) this.getActivity()).selectCountry(country);
-	}
-	
-	@Override
-	public void onMovedToScrapHeap(View view) {
-		AdapterItem item = AdapterItem.getItem(view);
-		
-		if (item != null) {
-			item.onViewMovedToScrapHeap();
-		}
 	}
 	
 	public void refresh() {
