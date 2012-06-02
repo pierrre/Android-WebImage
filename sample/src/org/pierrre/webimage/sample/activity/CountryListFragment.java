@@ -33,6 +33,8 @@ public class CountryListFragment extends SherlockListFragment {
 	public void onViewCreated(View view, Bundle savedInstanceState) {
 		super.onViewCreated(view, savedInstanceState);
 		
+		this.getListView().setFastScrollEnabled(true);
+		
 		AdapterItem.setRecyclerLister(this.getListView());
 	}
 	
