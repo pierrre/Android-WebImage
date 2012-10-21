@@ -3,7 +3,7 @@
 	<name>WebImage-Library</name>
 	<comment></comment>
 	<projects>
-		<project>ThreadPoolExecutorAsyncTask-Library</project>
+		<project>AsyncTaskThreadPoolExecutor-Library</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

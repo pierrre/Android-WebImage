@@ -7,6 +7,7 @@ import java.util.Set;
 import java.util.WeakHashMap;
 
 import org.apache.http.client.HttpClient;
+import org.pierrre.attpe.AsyncTaskThreadPoolExecutorHelper;
 
 import android.app.Application;
 import android.content.Context;
@@ -142,7 +143,7 @@ public class WebImageManager implements WebImageRequest.Receiver {
 			boolean lastRequestCompleted = this.receiverManager.getLastRequestCompleted(receiver);
 			
 			request = new WebImageRequest(url, this, this.getHttpClient(), this.fileCacheEnabled ? this.fileCache : null, !lastRequestCompleted);
-			request.executeOnThreadPoolExecutor();
+			AsyncTaskThreadPoolExecutorHelper.execute(request);
 			
 			this.urlManager.put(url, request);
 		}

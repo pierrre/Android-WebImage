@@ -8,14 +8,14 @@ import org.apache.http.HttpStatus;
 import org.apache.http.StatusLine;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
-import org.pierrre.tpeat.ThreadPoolExecutorAsyncTask;
 import org.pierrre.webimage.util.InputStreamHelper;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.os.AsyncTask;
 import android.util.Log;
 
-public class WebImageRequest extends ThreadPoolExecutorAsyncTask<Void, Void, Bitmap> {
+public class WebImageRequest extends AsyncTask<Void, Void, Bitmap> {
 	private static long HTTP_REQUEST_DELAY = 500;
 	
 	private String url;
