@@ -11,9 +11,25 @@ public class WebImageView extends ImageView implements WebImageManager.Receiver 
 	private WebImageManager manager;
 	private String url;
 	
+	public WebImageView(Context context) {
+		super(context);
+		
+		this.initWebImageView();
+	}
+	
 	public WebImageView(Context context, AttributeSet attrs) {
 		super(context, attrs);
 		
+		this.initWebImageView();
+	}
+	
+	public WebImageView(Context context, AttributeSet attrs, int defStyle) {
+		super(context, attrs, defStyle);
+		
+		this.initWebImageView();
+	}
+	
+	private void initWebImageView() {
 		this.manager = WebImageManager.getInstance(this.getContext());
 		this.url = null;
 	}
